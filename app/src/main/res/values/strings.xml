@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">KotlinConcept</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_fragment">Hello Home fragment</string>
+    <string name="pick_fragment">Hello Pick fragment</string>
+    <string name="drop_fragment">Hello Drop fragment</string>
+    <string name="book_fragment">Hello Book fragment</string>
+    <string name="search_fragment">Hello Search fragment</string>
+    <string name="search_btn"> Search List fragment</string>
+    <string name="search_list_fragment">Hello Search List fragment</string>
+    <string name="search_list_btn">  Book fragment</string>
+    <string name="hello_blank_fragment">Hello Main Navigation fragment</string>
+    <string name="book_btn"> Home fragment</string>
+    <string name="pick">Pick Me</string>
+    <string name="drop">Drop Me</string>
+    <string name="search">Search Places</string>
+
 </resources>

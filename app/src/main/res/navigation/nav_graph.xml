@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.naval.kotlinconcept.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <argument
+            android:name="param1"
+
+            android:defaultValue="one"/>
+        <argument
+            android:name="param2"
+
+            android:defaultValue="two" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_pickFragment"
+            app:destination="@id/pickFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_dropFragment"
+            app:destination="@id/dropFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/pickFragment"
+        android:name="com.naval.kotlinconcept.PickFragment"
+        android:label="fragment_pick"
+        tools:layout="@layout/pick_fragment" />
+    <fragment
+        android:id="@+id/dropFragment"
+        android:name="com.naval.kotlinconcept.DropFragment"
+        android:label="drop_fragment"
+        tools:layout="@layout/drop_fragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.naval.kotlinconcept.SearchFragment"
+        android:label="search_fragment"
+        tools:layout="@layout/search_fragment">
+
+        <action
+            android:id="@+id/action_searchFragment_to_searchListFragment"
+            app:destination="@id/searchListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchListFragment"
+        android:name="com.naval.kotlinconcept.SearchListFragment"
+        android:label="search_list_fragment"
+        tools:layout="@layout/search_list_fragment">
+        <action
+            android:id="@+id/action_searchListFragment_to_bookFragment"
+            app:destination="@id/bookFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookFragment"
+        android:name="com.naval.kotlinconcept.BookFragment"
+        android:label="book_fragment"
+        tools:layout="@layout/book_fragment" >
+        <action
+            android:id="@+id/action_bookFragment_to_homeFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+</navigation>
