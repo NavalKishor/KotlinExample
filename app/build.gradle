@@ -62,4 +62,18 @@ dependencies {
     implementation "androidx.navigation:navigation-ui-ktx:$navigationVersion"
     implementation "androidx.fragment:fragment-ktx:$fragmentktx"
 
+   // implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1'
+   // implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-moshi:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-moshi:$retrofit_version"
+
+    implementation "com.squareup.okhttp3:logging-interceptor:$logInter_version"
+    implementation "com.squareup.okhttp3:okhttp:$logInter_version"
+
+
+
 }

@@ -1,7 +1,6 @@
 package com.naval.kotlinconcept
 
 
-import android.app.Activity
 import android.os.Bundle
 import android.util.Log
 import android.view.KeyEvent
